@@ -44,6 +44,7 @@ const Home = (props) => {
             alert(error.message);
           })
     };
+    
 
     return(
         <View style={{flex: 1}}>
