@@ -28,7 +28,7 @@ const Home = (props) => {
             myCity = city;
         }
         
-        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${myCity}&APPID=9f41c7d63d12e5cede5baac2eb027756&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ myCity }&APPID=9f41c7d63d12e5cede5baac2eb027756&units=metric`)
         .then(data => data.json())
         .then(results => {
             console.log(results);
@@ -44,7 +44,7 @@ const Home = (props) => {
             alert(error.message);
           })
     };
-    
+
 
     return(
         <View style={{flex: 1}}>
